@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <p>My favorite pet is {{ myPet }}</p>
+    <p>My favorite pet is {{ eventBus.myPet }}</p>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 
 export default {
   name: 'App',
-  props: ["myPet"]
+  props: ["eventBus"]
 }
 </script>
 
